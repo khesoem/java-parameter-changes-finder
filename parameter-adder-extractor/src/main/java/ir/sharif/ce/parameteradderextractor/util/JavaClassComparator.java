@@ -17,7 +17,7 @@ import org.jboss.forge.roaster.model.source.JavaSource;
 import org.jboss.forge.roaster.model.source.MethodSource;
 
 public class JavaClassComparator {
-	public static final String METHOD_SIGNATURE_SPEARATOR = ":::", METHOD_LIST_SEPARATOR = "$$$";
+	public static final String METHOD_SIGNATURE_SEPARATOR = ":::", METHOD_LIST_SEPARATOR = "___";
 
 	private ArrayList<JavaClassSource> oldClasses, newClasses;
 	private Set<String> oldMethodExtendedSignatures, newMethodExtendedSignatures;
@@ -54,7 +54,7 @@ public class JavaClassComparator {
 		for (JavaClassSource clazz : classes) {
 			List<MethodSource<JavaClassSource>> methods = clazz.getMethods();
 			for (MethodSource<JavaClassSource> method : methods) {
-				ret.add(clazz.getName() + METHOD_SIGNATURE_SPEARATOR + method.toSignature());
+				ret.add(clazz.getName() + METHOD_SIGNATURE_SEPARATOR + method.toSignature());
 			}
 		}
 		return ret;

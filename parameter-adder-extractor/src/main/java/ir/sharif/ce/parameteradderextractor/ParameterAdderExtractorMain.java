@@ -20,7 +20,14 @@ public class ParameterAdderExtractorMain {
 //		JavaClassComparator comparator = new JavaClassComparator("JavaClassComparatorOld.java", "JavaClassComparator.java");
 		Set<String> methodsWithOneAddedParameter = comparator.getMethodWithOneParameterAdded();
 		for(String methodWithOneAddedParameter : methodsWithOneAddedParameter){
-			outputPw.println(methodWithOneAddedParameter);
+			String[] methodSignatures = methodWithOneAddedParameter.split(JavaClassComparator.METHOD_LIST_SEPARATOR);
+			String oldSignature = methodSignatures[0].substring(
+					methodSignatures[0].indexOf(JavaClassComparator.METHOD_SIGNATURE_SEPARATOR)
+							+ JavaClassComparator.METHOD_SIGNATURE_SEPARATOR.length()),
+					newSignature = methodSignatures[1].substring(
+							methodSignatures[1].indexOf(JavaClassComparator.METHOD_SIGNATURE_SEPARATOR)
+									+ JavaClassComparator.METHOD_SIGNATURE_SEPARATOR.length());
+			outputPw.println(oldSignature + ", " + newSignature);
 		}
 		outputPw.flush();
 		
