@@ -63,6 +63,8 @@ done < $all_commits_file
 # Running java program to find parameter-added methods
 echo "running java"
 cd ..
+number_of_to_be_compared_files=$(wc -l < to_be_compared_files.txt)
+echo "$number_of_to_be_compared_files changed_files should be checked"
 java -jar Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar "to_be_compared_files.txt" "parameter_adder_commits.csv"
 cd $git_project_folder
 echo "running java is finished"
