@@ -11,14 +11,14 @@ public class ParameterAdderExtractorMain {
 	
 	/* args[0] = oldClassFilePath, args[1] = newClassFilePath, args[2] = outputFilePath */
 	public static void main(String[] args) throws IOException {
-		File outputFile = new File(args[2]);
-//		File outputFile = new File("output");
+//		File outputFile = new File(args[2]);
+		File outputFile = new File("output");
 		outputFile.createNewFile();
 		PrintWriter outputPw = new PrintWriter(outputFile);
 		
-		JavaClassComparator comparator = new JavaClassComparator(args[0], args[1]);
-//		JavaClassComparator comparator = new JavaClassComparator("JavaClassComparatorOld.java", "JavaClassComparator.java");
-		Set<String> methodsWithOneAddedParameter = comparator.getMethodWithOneParameterAdded();
+//		JavaClassComparator comparator = new JavaClassComparator(args[0], args[1]);
+		JavaClassComparator comparator = new JavaClassComparator("FieldVector3Dold.java", "FieldVector3D.java");
+		Set<String> methodsWithOneAddedParameter = comparator.getMethodsWithOneParameterAdded();
 		for(String methodWithOneAddedParameter : methodsWithOneAddedParameter){
 			String[] methodSignatures = methodWithOneAddedParameter.split(JavaClassComparator.METHOD_LIST_SEPARATOR);
 			String oldSignature = methodSignatures[0].substring(

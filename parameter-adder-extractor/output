@@ -1,0 +1,6 @@
+public distance1(FieldVector3D) : T, public distance1(FieldVector3D, Coordinates3D) : T
+public distanceInf(FieldVector3D) : T, public distanceInf(FieldVector3D, Coordinates3D) : T
+public distance(FieldVector3D) : T, public distance(FieldVector3D, Coordinates3D) : T
+public crossProduct(FieldVector3D) : FieldVector3D, public crossProduct(FieldVector3D, Coordinates3D) : FieldVector3D
+public distanceSq(FieldVector3D) : T, public distanceSq(FieldVector3D, Coordinates3D) : T
+public dotProduct(FieldVector3D) : T, public dotProduct(FieldVector3D, Coordinates3D) : T
