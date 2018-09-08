@@ -46,8 +46,8 @@ If you want to run jar file, you can simply run the following command.
 ```
 java -jar Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar inputFilePath outputFilePath
 ```
- You should pass inputFilePath and outputFilePath to it. The output file would have the same format as parameter_adder_commits.csv and each line of the input file has the format of "commit_id, file_name, old_file_path, new_file_path". You can see a sample of jar-input-file in "jar-input-sample.txt" in this repo.<br />
-This command will <br />
+You should pass inputFilePath and outputFilePath to it. The output file would have the same format as parameter_adder_commits.csv and each line of the input file has the format of "commit_id, file_name, old_file_path, new_file_path". You can see a sample of jar-input-file in "jar-input-sample.txt" in this repo.<br />
+For each line of the input-file, this command will compare "old_file_path" and "new_file_path" and find all the methods to which EXACTLY one parameter is added <br />
 ## Sample results
 This project has been tested on two github repos:<br />
 https://github.com/apache/commons-math and https://github.com/jfree/jfreechart<br />
