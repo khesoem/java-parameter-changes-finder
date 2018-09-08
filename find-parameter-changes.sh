@@ -1,8 +1,8 @@
 # $1=git-repo-address, $2=directory to clone project into
 
 # Initializing...
-#rm $2 -rf
-#git clone $1 $2
+rm $2 -rf
+git clone $1 $2
 git_project_folder=$2
 tmp_folder="$2-tmp"
 sudo rm $tmp_folder -rf
