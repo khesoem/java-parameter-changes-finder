@@ -38,12 +38,15 @@ First, you should clone this project into your hard-disk.<br />
 This project contains a bash script and a java jar file.<br />
 To change the bash script, you can simply open it by an editor and change it!<br />
 
-To change the jar file, you can change the src of "parameter-adder-extractor" folder or open this folder by IntelliJ and edit files there.<br />
-When you are done with the changes you want to make, you should go to the root of "parameter-adder-extractor" folder and run "mvn package". Note that you should have maven installed to be able to run this command. The new version of jar file will be accessible in "parameter-adder-extractor/target/Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar".<br />
-If you want to run jar file, you can simply run the following command. You should pass inputFilePath and outputFilePath to it. The output file would have the same format as parameter_adder_commits.csv and each line of the input file has the format of "commit_id, file_name, old_file_path, new_file_path". You can see a sample of jar-input-file in "jar-input-sample.txt" in this repo.<br />
+To change the jar file, you can change the src of "parameter-adder-extractor" folder or open this folder by IntelliJ and edit files there.
+
+When you are done with the changes you want to make, you should go to the root of "parameter-adder-extractor" folder and run "mvn package". Note that you should have maven installed to be able to run this command. <br />
+The new version of jar file will be accessible in "parameter-adder-extractor/target/Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar".<br />
+If you want to run jar file, you can simply run the following command.
 ```
 java -jar Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar inputFilePath outputFilePath
 ```
+ You should pass inputFilePath and outputFilePath to it. The output file would have the same format as parameter_adder_commits.csv and each line of the input file has the format of "commit_id, file_name, old_file_path, new_file_path". You can see a sample of jar-input-file in "jar-input-sample.txt" in this repo.<br />
 This command will <br />
 ## Sample results
 This project has been tested on two github repos:<br />
