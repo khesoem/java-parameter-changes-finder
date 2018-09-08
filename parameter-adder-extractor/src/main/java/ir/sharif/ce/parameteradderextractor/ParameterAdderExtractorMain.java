@@ -18,6 +18,7 @@ public class ParameterAdderExtractorMain {
 		outputFile.createNewFile();
 		PrintWriter outputPw = new PrintWriter(outputFile);
 
+        int numberOfCheckedFileChanges = 0;
         Scanner sc = new Scanner(new File(args[0]));
         while(sc.hasNextLine()) {
             String inputStr = sc.nextLine();
@@ -26,6 +27,10 @@ public class ParameterAdderExtractorMain {
             String[] inputArr = inputStr.split(", ");
             String commitId = inputArr[0], fileName = inputArr[1], oldFilePath = inputArr[2], newFilePath = inputArr[3];
             printParameterAddedMethods(outputPw, commitId, fileName, oldFilePath, newFilePath);
+            numberOfCheckedFileChanges++;
+            if(numberOfCheckedFileChanges % 100 == 0){
+                System.out.println(numberOfCheckedFileChanges + " changed_files are checked");
+            }
         }
 		outputPw.close();
 	}
