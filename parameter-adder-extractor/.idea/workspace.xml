@@ -24,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParameterAdderExtractorMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParameterAdderExtractorMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.5209424">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaClassComparator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JavaClassComparator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/util/JavaClassComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40052357">
+            <state vertical-scroll-proportion="0.0">
               <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
                 <element signature="e#5062#5079#0" expanded="true" />
@@ -77,11 +77,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java" />
         <option value="$PROJECT_DIR$/output" />
         <option value="$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/models/SetOfClassesAndInterfaces.java" />
         <option value="$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/models/ListOfClassesAndInterfaces.java" />
         <option value="$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/util/JavaClassComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java" />
       </list>
     </option>
   </component>
@@ -731,12 +731,12 @@
       <created>1536395498548</created>
       <option name="number" value="Default" />
       <updated>1536395498548</updated>
-      <workItem from="1536395499671" duration="9074000" />
+      <workItem from="1536395499671" duration="9693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9074000" />
+    <option name="totallyTimeSpent" value="9693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -849,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -917,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/util/JavaClassComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40052357">
+        <state vertical-scroll-proportion="0.0">
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="e#5062#5079#0" expanded="true" />
@@ -935,6 +927,14 @@
             <element signature="e#7790#7791#0" expanded="true" />
             <element signature="e#7840#7841#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5209424">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
