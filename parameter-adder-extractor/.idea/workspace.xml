@@ -27,8 +27,8 @@
       <file leaf-file-name="ParameterAdderExtractorMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.536036">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.15315315">
+              <caret line="13" column="79" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -717,12 +717,12 @@
       <option name="number" value="Default" />
       <updated>1536395498548</updated>
       <workItem from="1536395499671" duration="11434000" />
-      <workItem from="1536419514050" duration="1438000" />
+      <workItem from="1536419514050" duration="2126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12872000" />
+    <option name="totallyTimeSpent" value="13560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -810,18 +810,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#6459#6460#0" expanded="true" />
-            <element signature="e#6492#6493#0" expanded="true" />
-            <element signature="e#6770#6771#0" expanded="true" />
-            <element signature="e#6814#6815#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7476#7477#0" expanded="true" />
-            <element signature="e#7558#7559#0" expanded="true" />
-            <element signature="e#7608#7609#0" expanded="true" />
-            <element signature="e#7672#7673#0" expanded="true" />
-            <element signature="e#7708#7709#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7840#7841#0" expanded="true" />
+            <element signature="e#6459#6460#0" expanded="false" />
+            <element signature="e#6492#6493#0" expanded="false" />
+            <element signature="e#6770#6771#0" expanded="false" />
+            <element signature="e#6814#6815#0" expanded="false" />
+            <element signature="e#7440#7441#0" expanded="false" />
+            <element signature="e#7476#7477#0" expanded="false" />
+            <element signature="e#7558#7559#0" expanded="false" />
+            <element signature="e#7608#7609#0" expanded="false" />
+            <element signature="e#7672#7673#0" expanded="false" />
+            <element signature="e#7708#7709#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="false" />
+            <element signature="e#7840#7841#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -934,26 +934,26 @@
         <state vertical-scroll-proportion="0.038288288">
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#6459#6460#0" expanded="true" />
-            <element signature="e#6492#6493#0" expanded="true" />
-            <element signature="e#6770#6771#0" expanded="true" />
-            <element signature="e#6814#6815#0" expanded="true" />
-            <element signature="e#7440#7441#0" expanded="true" />
-            <element signature="e#7476#7477#0" expanded="true" />
-            <element signature="e#7558#7559#0" expanded="true" />
-            <element signature="e#7608#7609#0" expanded="true" />
-            <element signature="e#7672#7673#0" expanded="true" />
-            <element signature="e#7708#7709#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7840#7841#0" expanded="true" />
+            <element signature="e#6459#6460#0" expanded="false" />
+            <element signature="e#6492#6493#0" expanded="false" />
+            <element signature="e#6770#6771#0" expanded="false" />
+            <element signature="e#6814#6815#0" expanded="false" />
+            <element signature="e#7440#7441#0" expanded="false" />
+            <element signature="e#7476#7477#0" expanded="false" />
+            <element signature="e#7558#7559#0" expanded="false" />
+            <element signature="e#7608#7609#0" expanded="false" />
+            <element signature="e#7672#7673#0" expanded="false" />
+            <element signature="e#7708#7709#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="false" />
+            <element signature="e#7840#7841#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/sharif/ce/parameteradderextractor/ParameterAdderExtractorMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.536036">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.15315315">
+          <caret line="13" column="79" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="79" />
           <folding />
         </state>
       </provider>

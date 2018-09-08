@@ -10,7 +10,7 @@ import ir.sharif.ce.parameteradderextractor.util.JavaClassComparator;
 
 public class ParameterAdderExtractorMain {
 	
-	/*  args[0] = inputFilePath, args[2] = outputFilePath
+	/*  args[0] = inputFilePath, args[1] = outputFilePath
 	*   input-format: listOf(commit_id, file_name, old_file_path, new_file_path)
 	*/
 	public static void main(String[] args) throws IOException {
