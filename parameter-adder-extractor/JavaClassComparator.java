@@ -17,8 +17,7 @@ import org.jboss.forge.roaster.model.source.JavaSource;
 import org.jboss.forge.roaster.model.source.MethodSource;
 
 public class JavaClassComparator {
-	public static final String METHOD_SIGNATURE_SPEARATOR = ":::",
-			METHOD_LIST_SEPARATOR = "$$$";
+	public static final String METHOD_SIGNATURE_SPEARATOR = ":::", METHOD_LIST_SEPARATOR = "$$$";
 
 	private ArrayList<JavaClassSource> oldClasses, newClasses;
 	private Set<String> oldMethodExtendedSignatures, newMethodExtendedSignatures;
@@ -33,18 +32,21 @@ public class JavaClassComparator {
 
 	public Set<String> getMethodWithOneParameterAdded() {
 		Set<String> ret = new HashSet<String>();
-		for(String newMethod : newMethodExtendedSignatures){
-			if(oldMethodExtendedSignatures.contains(newMethod))
+		for (String newMethod : newMethodExtendedSignatures) {
+			if (oldMethodExtendedSignatures.contains(newMethod))
 				continue;
-			String newMethodWithoutLastParam = eliminateLastParam(newMethod, 0);
-			if(oldMethodExtendedSignatures.contains(newMethodWithoutLastParam))
-				ret.add(newMethodWithoutLastParam + METHOD_SIGNATURE_SPEARATOR + newMethod);
+			String newMethodWithoutLastParam = eliminateLastParam(newMethod);
+			if (oldMethodExtendedSignatures.contains(newMethodWithoutLastParam))
+				ret.add(newMethodWithoutLastParam + METHOD_LIST_SEPARATOR + newMethod);
 		}
 		return ret;
 	}
-	
-	private String eliminateLastParam(String method){
-		return method.substring(0, method.lastIndexOf(",")) + method.substring(method.lastIndexOf(")"));
+
+	private String eliminateLastParam() {
+		if (method.contains(","))
+			return method.substring(0, method.lastIndexOf(",")) + method.substring(method.lastIndexOf(")"));
+		else
+			return method.substring(0, method.lastIndexOf("(") + 1) + method.substring(method.lastIndexOf(")"));
 	}
 
 	public Set<String> classListToMethodSignatures(List<JavaClassSource> classes) {
@@ -66,8 +68,12 @@ public class JavaClassComparator {
 		List<JavaType<?>> types = unit.getTopLevelTypes();
 		ArrayList<JavaClassSource> classes = new ArrayList<JavaClassSource>();
 		for (int i = 0; i < types.size(); i++) {
-			JavaClassSource clazz = (JavaClassSource) types.get(i);
-			classes.addAll(extractAllClasses(clazz));
+			try {
+				JavaClassSource clazz = (JavaClassSource) types.get(i);
+				classes.addAll(extractAllClasses(clazz));
+			} catch (Exception e) {
+				System.err.println(e.getMessage());
+			}
 		}
 
 		fileStream.close();
