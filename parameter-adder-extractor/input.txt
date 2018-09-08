@@ -1,0 +1,3 @@
+# TEST
+commit1, FieldVector3D.java, FieldVector3Dold.java, FieldVector3D.java
+commit2, JavaClassComparator.java, JavaClassComparator.java, JavaClassComparator2.java
