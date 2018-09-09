@@ -9,6 +9,7 @@ To use it, follow these stpes in ubuntu (It is tested on ubuntu 16.04):<br />
 Note 1: you should have git installed.<br />
 Note 2: you may need to enter your sudo user password when the script is running.<br />
 Note 3: you need to change the script file permissions so that you can run it as a script file.<br />
+Note 4: you need Java 8 on your computer. <br />
 5- You can find the results in "parameter_adder_commits.csv" in new_dir.<br />
 
 The following commands show you an example of using this project:<br />
@@ -46,7 +47,7 @@ When you are done with the changes you want to make, you should go to the root o
 
 The new version of jar file will be accessible in "parameter-adder-extractor/target/Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar".
 
-If you want to run jar file, you can simply run the following command.
+If you want to run jar file, you can simply run the following command (you must have Java 8 on your computer).
 ```
 java -jar Parameter_Adder_Extractor-1.0-SNAPSHOT-jar-with-dependencies.jar inputFilePath outputFilePath
 ```
